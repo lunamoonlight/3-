@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipShop — Скрепки для любых задач</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">📎 ClipShop</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li class="dropdown">
+                    <a href="#">Услуги ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="delivery.html">Доставка и оплата</a></li>
+                        <li><a href="delivery.html#wholesale">Оптом</a></li>
+                        <li><a href="delivery.html#corporate">Корпоративным клиентам</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Скрепки, которые держат всё</h1>
+            <p>От классических металлических до дизайнерских цветных. Оптом и в розницу.</p>
+            <a href="catalog.html" class="btn">Перейти в каталог</a>
+        </section>
+
+        <section class="features">
+            <h2>Почему выбирают нас</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Огромный выбор</h3>
+                    <p>Более 50 видов скрепок: цветные, фигурные, гигантские и мини.</p>
+                </div>
+                <div class="card">
+                    <h3>🚚 Быстрая доставка</h3>
+                    <p>Отправляем заказы в день оплаты. Доставка по всей России.</p>
+                </div>
+                <div class="card">
+                    <h3>💰 Честные цены</h3>
+                    <p>Прямые поставки от производителя. Скидки при оптовом заказе.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ClipShop. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчёт заказа — ClipShop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">📎 ClipShop</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li class="dropdown">
+                    <a href="#">Услуги ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="delivery.html">Доставка и оплата</a></li>
+                        <li><a href="delivery.html#wholesale">Оптом</a></li>
+                        <li><a href="delivery.html#corporate">Корпоративным клиентам</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Рассчитать стоимость заказа</h2>
+        <p>Выберите тип скрепок, укажите количество упаковок — и мы рассчитаем итоговую сумму.</p>
+
+        <form id="calcForm" class="calc-form">
+            <label for="product">Тип скрепок:</label>
+            <select id="product">
+                <option value="50">Классические — 50 руб./уп.</option>
+                <option value="120">Цветные — 120 руб./уп.</option>
+                <option value="90">Гигантские — 90 руб./уп.</option>
+                <option value="150">Фигурные — 150 руб./уп.</option>
+                <option value="200">Скобки для степлера — 200 руб./уп.</option>
+            </select>
+
+            <label for="quantity">Количество упаковок:</label>
+            <input type="number" id="quantity" value="1" min="1" max="200000" step="1">
+
+            <label for="discount">Скидка (%):</label>
+            <input type="number" id="discount" value="0" min="0" max="100" step="1">
+
+            <button type="button" id="calcBtn">Рассчитать</button>
+        </form>
+
+        <div id="result" class="result"></div>
+        <section id="wholesale" class="info-section">
+            <h3>Оптовым покупателям</h3>
+            <p>При заказе от 100 упаковок действует скидка 15%. Для постоянных клиентов — индивидуальные условия и отсрочка платежа.</p>
+            <p>Свяжитесь с нами: <a href="mailto:opt@clipshop.ru">opt@clipshop.ru</a></p>
+        </section>
+
+        <section id="corporate" class="info-section">
+            <h3>Корпоративным клиентам</h3>
+            <p>Мы работаем с юридическими лицами по договору. Возможны брендированные скрепки с логотипом вашей компании.</p>
+            <p>Запросить коммерческое предложение: <a href="mailto:corp@clipshop.ru">corp@clipshop.ru</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ClipShop. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

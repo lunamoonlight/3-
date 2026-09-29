@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — ClipShop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">📎 ClipShop</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html" class="active">Каталог</a></li>
+                <li class="dropdown">
+                    <a href="#">Услуги ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="delivery.html">Доставка и оплата</a></li>
+                        <li><a href="delivery.html#wholesale">Оптом</a></li>
+                        <li><a href="delivery.html#corporate">Корпоративным клиентам</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Наш каталог</h2>
+        <table class="catalog-table">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Описание</th>
+                    <th>Цена (руб./уп.)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Классические металлические</td>
+                    <td>Стандартные скрепки 28 мм, 100 шт. в упаковке.</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Цветные (набор 6 цветов)</td>
+                    <td>Яркие скрепки 28 мм, по 20 шт. каждого цвета.</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>Гигантские (50 мм)</td>
+                    <td>Для больших документов, 50 шт. в упаковке.</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Фигурные (звёздочки)</td>
+                    <td>Декоративные скрепки в форме звёзд, 30 шт.</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Скрепки-скобки для степлера</td>
+                    <td>Универсальные скобки №24/6, 1000 шт.</td>
+                    <td>200</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="note">* Цены указаны без учёта доставки. Оптовые скидки обсуждаются индивидуально.</p>
+    </main>
+
+    <br><br><br>
+    <footer>
+        <p>&copy; 2026 ClipShop. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
